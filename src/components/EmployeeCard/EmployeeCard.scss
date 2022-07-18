@@ -1,20 +1,26 @@
 @use "../../assets/sass/_variables.scss" as *;
 
 .team-card{
-    width: 10rem;
-    height: 13rem;
+    width: 12.5rem;
+    height: 15rem;
 
     margin: 0.5rem;
-    border: 2px solid black;
+    padding-top: 1rem;
+    border: 2px solid $colour-black;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
-    background-color: lightcyan;
+    background-color: $colour-primary;
+    font-size: 120%;
 
     & * {
         padding: 0.25rem;
+    }
+
+    &__role{
+        color: $colour-subheading;
     }
 }

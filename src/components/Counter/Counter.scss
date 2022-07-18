@@ -1,10 +1,37 @@
+@use "../../assets/sass/_variables.scss" as *;
+
 .counter-box{
-    border: 1px solid black;
+    border: 1px solid $colour-black;
     width: 90%;
     margin: 0.5rem;
 
-    .increments > *{
-        display: inline-block;
-        margin: 0 1rem;
+    .title{
+        font-weight: bold;
+    }
+
+    .increments{
+        & *{
+            display: inline-block;
+            margin: 0 1rem;
+        }
+
+        &__button{
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+
+            background-color: $colour-secondary;
+            border: 0.05rem solid $colour-black;
+
+            font-weight: bold;
+            text-align: center;
+            line-height: 75%;
+
+            user-select: none;
+
+            &:active{
+                background-color: $colour-clicked;
+            }
+        }
     }
 }
