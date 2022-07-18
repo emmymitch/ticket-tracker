@@ -2,23 +2,19 @@
 
 .team-card{
     width: 10rem;
-    height: 12.5rem;
+    height: 13rem;
 
     margin: 0.5rem;
     border: 2px solid black;
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 
     background-color: lightcyan;
 
     & * {
         padding: 0.25rem;
-    }
-
-    .counter-box{
-        justify-self: flex-end;
     }
 }
