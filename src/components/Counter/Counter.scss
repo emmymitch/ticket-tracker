@@ -1,0 +1,9 @@
+.counter-box{
+    border: 1px solid black;
+    width: 90%;
+
+    .increments > *{
+        display: inline-block;
+        margin: 0 1rem;
+    }
+}

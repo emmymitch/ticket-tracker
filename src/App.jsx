@@ -1,18 +1,21 @@
 import './App.scss';
-import EmployeeCard from "./components/EmployeeCard/EmployeeCard.jsx";
+import EmployeeCards from "./components/EmployeeCard/EmployeeCard.jsx";
 import team from "./data/team.js";
+//import Counter from './components/Counter/Counter';
 
 const App = () => {
   return (
-      <div className="App">
-        <header className="App-header">
+    <>
+      <div className="app">
+        <header className="header">
           <h1>Employee Ticket Tracker</h1>
         </header>
 
         <section className="tracker-section">
-          <EmployeeCard team={team} />
+          <EmployeeCards team={team} />
         </section>
       </div>
+    </>
   );
 }
 
