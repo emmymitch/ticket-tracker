@@ -31,7 +31,7 @@ const App = () => {
         </section> */}
 
         <section className="tracker-section">
-          <EmployeeCards team={team} title="Ticket Count" />
+          <EmployeeCards team={team} title="Outstanding Tickets" />
         </section>
       </div>
     </>
