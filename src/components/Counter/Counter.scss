@@ -34,4 +34,29 @@
             }
         }
     }
+
+    &--warning{
+        background-color: $colour-warning;
+
+        .increments__button{
+            background-color: $colour-warning-button;
+            &:active{
+                background-color: $colour-warning-clicked;
+            }
+        }
+    }
+
+    &--emergency{
+        background-color: $colour-emergency;
+        color: $colour-text-secondary;
+
+        .increments__button{
+            background-color: $colour-emergency-button;
+            color: $colour-text-secondary;
+
+            &:active{
+                background-color: $colour-black;
+            }
+        }
+    }
 }
