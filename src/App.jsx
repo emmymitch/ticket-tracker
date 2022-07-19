@@ -1,7 +1,7 @@
 import './App.scss';
 import EmployeeCards from "./components/EmployeeCard/EmployeeCard.jsx";
 import team from "./data/team.js";
-import Filter from './components/Filter/Filter';
+//import Filter from './components/Filter/Filter';
 
 const App = () => {
   // const searchEmployees = (event) => {

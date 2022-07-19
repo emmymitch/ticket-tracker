@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import "./Counter.scss";
 
 export const Counter = ({title}) => {
