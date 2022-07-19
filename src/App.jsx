@@ -27,7 +27,7 @@ const App = () => {
       jobRoles.push(employee.role);
       return <option key={employee.role} value={employee.role}>{employee.role}</option>;
     } else {
-      return;
+      return "";
     }
   })
 
