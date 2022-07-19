@@ -1,13 +1,30 @@
+import { render } from "@testing-library/react";
 import "./Counter.scss";
 
 export const Counter = ({title}) => {
+    let count = 0;
+
+    // const increment = () => {
+    //     count ++;
+    //     this.setState({counter: count});
+    // }
+
+    // const decrement = () => {
+    //     if (count > 0){
+    //         count --;
+    //         this.setState({counter: count});
+    //     } else{
+    //         return;
+    //     }
+    // }
+    
     return (
         <div className="counter-box">
             <p className="title">{title}</p>
-            <p>0</p>
+            <p>{count}</p>
             <div className="increments">
-                <p className="increments__button">-</p>
-                <p className="increments__button">+</p>
+                <button className="increments__button">-</button>
+                <button className="increments__button">+</button>
             </div>
         </div>
     )
