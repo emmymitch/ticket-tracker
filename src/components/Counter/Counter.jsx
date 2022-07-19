@@ -1,29 +1,28 @@
+import { useState } from "react";
 import "./Counter.scss";
 
 export const Counter = ({title}) => {
-    let count = 0;
+    const [ticketCount, setTicketCount] = useState(0);
+    
+    const increment = () => {
+        setTicketCount(ticketCount + 1);
+    }
 
-    // const increment = () => {
-    //     count ++;
-    //     this.setState({counter: count});
-    // }
-
-    // const decrement = () => {
-    //     if (count > 0){
-    //         count --;
-    //         this.setState({counter: count});
-    //     } else{
-    //         return;
-    //     }
-    // }
+    const decrement = () => {
+        if (ticketCount > 0){
+            setTicketCount(ticketCount - 1);
+        } else{
+            return;
+        }
+    }
     
     return (
         <div className="counter-box">
             <p className="title">{title}</p>
-            <p>{count}</p>
+            <p>{ticketCount}</p>
             <div className="increments">
-                <button className="increments__button">-</button>
-                <button className="increments__button">+</button>
+                <button onClick={decrement} className="increments__button">-</button>
+                <button onClick={increment} className="increments__button">+</button>
             </div>
         </div>
     )
