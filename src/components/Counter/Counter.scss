@@ -1,9 +1,10 @@
 @use "../../assets/sass/_variables.scss" as *;
 
 .counter-box{
-    border: 1px solid $colour-black;
-    width: 90%;
     margin: 0.5rem;
+
+    border: 1px solid $colour-black;
+    border-radius: 0.25rem;
 
     .title{
         font-weight: bold;

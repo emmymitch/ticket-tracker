@@ -6,7 +6,9 @@
 
     margin: 0.5rem;
     padding-top: 1rem;
+
     border: 2px solid $colour-black;
+    border-radius: 0.5rem;
 
     display: flex;
     flex-direction: column;
@@ -14,6 +16,7 @@
     align-items: center;
 
     background-color: $colour-primary;
+    box-shadow: 0.25rem 0.25rem 0 $colour-subheading;
     font-size: 120%;
 
     & * {
