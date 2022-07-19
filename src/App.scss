@@ -34,6 +34,11 @@ body{
     .filter-section{
       grid-area: filters;
       margin: 2rem;
+      text-align: left;
+
+      h3{
+        text-align: center;
+      }
     }
 
     .cards-section{

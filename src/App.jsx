@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.scss';
 import EmployeeCards from "./components/EmployeeCard/EmployeeCard.jsx";
 import team from "./data/team.js";
-import Filter from './components/Filter/Filter';
+import Input from './components/Input/Input';
 
 const App = () => {
   const [cardsToRender, setCardsToRender] = useState(team);
@@ -26,7 +26,7 @@ const App = () => {
   const optionList = team.map((employee) => {
     if (jobRoles.indexOf(employee.role) == -1){
       jobRoles.push(employee.role);
-      return <option value={employee.role}>{employee.role}</option>;
+      return <option key={employee.role} value={employee.role}>{employee.role}</option>;
     }
   })
 
@@ -58,15 +58,18 @@ const App = () => {
         <main className='main'>
           <section className='filter-section'>
             <h3>Filter Employees</h3>
-            <br></br>
-            <Filter label="Search by name: " name="searchBar" type="text" func={searchEmployees} />
-            <br></br>
-            <br></br>
+            
+            <br />
+            <Input label="Search by name: " name="searchBar" type="text" func={searchEmployees} />
+            
+            <br />
+            <br />
             <label htmlFor='jobFilter'>Filter by job title: </label>
             <select onChange={filterByJob} className='dropdownFilter' name='jobFilter'>
               <option value="all">No filter</option>
               {optionList}
             </select>
+
           </section>
 
           <section className="cards-section">

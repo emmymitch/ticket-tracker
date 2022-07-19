@@ -1,4 +1,4 @@
-import "./Filter.scss";
+import "./Input.scss";
 
 export const Filter = ({name, label, type, func}) => {
     return (
