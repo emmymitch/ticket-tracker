@@ -6,7 +6,6 @@ import Input from './components/Input/Input';
 
 const App = () => {
   const [cardsToRender, setCardsToRender] = useState(team);
-  let dropdownCode = "";
 
   const searchEmployees = (event) => {
     const searchTerm = event.target.value.toLowerCase();
@@ -24,9 +23,11 @@ const App = () => {
   //Get list of job roles for dropdown filter
   let jobRoles = [];
   const optionList = team.map((employee) => {
-    if (jobRoles.indexOf(employee.role) == -1){
+    if (jobRoles.indexOf(employee.role) === -1){
       jobRoles.push(employee.role);
       return <option key={employee.role} value={employee.role}>{employee.role}</option>;
+    } else {
+      return;
     }
   })
 
@@ -36,11 +37,11 @@ const App = () => {
 
     team.forEach((employee) => {
       //If no filter selected
-      if (filterTerm == "all"){
+      if (filterTerm === "all"){
         filterList.push(employee);
 
       //Otherwise check role against filter
-      } else if (employee.role.toLowerCase() == filterTerm.toLowerCase()){
+      } else if (employee.role.toLowerCase() === filterTerm.toLowerCase()){
         filterList.push(employee);
       }
     }) 
