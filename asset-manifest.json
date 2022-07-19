@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.e7b03493.css",
-    "main.js": "/static/js/main.9c059aaa.js",
-    "static/js/787.99c52fad.chunk.js": "/static/js/787.99c52fad.chunk.js",
-    "index.html": "/index.html",
-    "main.e7b03493.css.map": "/static/css/main.e7b03493.css.map",
-    "main.9c059aaa.js.map": "/static/js/main.9c059aaa.js.map",
-    "787.99c52fad.chunk.js.map": "/static/js/787.99c52fad.chunk.js.map"
+    "main.css": "/ticket-tracker/static/css/main.e7b03493.css",
+    "main.js": "/ticket-tracker/static/js/main.fc1e780d.js",
+    "static/js/787.99c52fad.chunk.js": "/ticket-tracker/static/js/787.99c52fad.chunk.js",
+    "index.html": "/ticket-tracker/index.html",
+    "main.e7b03493.css.map": "/ticket-tracker/static/css/main.e7b03493.css.map",
+    "main.fc1e780d.js.map": "/ticket-tracker/static/js/main.fc1e780d.js.map",
+    "787.99c52fad.chunk.js.map": "/ticket-tracker/static/js/787.99c52fad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7b03493.css",
-    "static/js/main.9c059aaa.js"
+    "static/js/main.fc1e780d.js"
   ]
 }
